@@ -12,17 +12,17 @@ const contacts = [
   {
     label: "LinkedIn",
     icon: linkedin,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/darkmadani",
   },
   {
     label: "Github",
     icon: github,
-    link: "https://github.com",
+    link: "https://github.com/darkmadani",
   },
   {
     label: "@xprofile",
     icon: twitter,
-    link: "https://x.com",
+    link: "https://x.com/darkmadani",
   },
 ];
 

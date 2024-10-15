@@ -2,7 +2,7 @@ const workAndEducation = [
   {
     year: "07 2022 - 10 2024",
     organization: "University Of Pamulang",
-    position: "Student",
+    position: "Mahasiswa",
     responsibility: "",
   },
   {
