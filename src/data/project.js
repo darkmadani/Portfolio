@@ -1,19 +1,29 @@
 import project from "../assets/projects/project.svg";
+import calculator from "../assets/projects/calculator.png";
+import login from "../assets/projects/login.png";
+import dashboard from "../assets/projects/dashboard.png";
 
 const projects = [
   {
-    name: "Aplikasi Digimon",
-    img: project,
+    name: "Calculator",
+    img: calculator,
     description:
       "",
-    link: "https://github.com",
+    link: "calculator.html",
   },
   {
-    name: "Aplikasi Pokemon",
-    img: project,
+    name: "Form Login / Register",
+    img: login,
     description:
       "",
-    link: "https://github.com",
+    link: "login.html",
+  },
+  {
+    name: "Dashboard",
+    img: dashboard,
+    description:
+      "",
+    link: "/dashboard/index.html",
   },
 ];
 
