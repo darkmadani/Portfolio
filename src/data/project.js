@@ -4,7 +4,7 @@ import login from "../assets/projects/login.png";
 import dashboard from "../assets/projects/dashboard.png";
 import calcu from "../../calculator.html"
 import signin from "../../login.html"
-import dash from "../../dashboard/index.html"
+
 
 
 const projects = [
