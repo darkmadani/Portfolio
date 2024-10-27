@@ -10,21 +10,21 @@ const projects = [
     img: calculator,
     description:
       "Tugas tentang Kalkulator",
-    link: "calculator.html",
+    link: "../calculator.html",
   },
   {
     name: "Form Login / Register",
     img: login,
     description:
       "Tugas tentang Form Login dan Register",
-    link: "login.html",
+    link: "../login.html",
   },
   {
     name: "Dashboard",
     img: dashboard,
     description:
       "Tugas tentang Dashboard",
-    link: "/dashboard/index.html",
+    link: "../dashboard/index.html",
   },
 ];
 
