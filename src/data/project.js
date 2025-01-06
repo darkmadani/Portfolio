@@ -2,7 +2,8 @@ import project from "../assets/projects/project.svg";
 import calculator from "../assets/projects/calculator.png";
 import login from "../assets/projects/login.png";
 import dashboard from "../assets/projects/dashboard.png";
-
+import tetris from "../assets/projects/tetris.png";
+import diagram from "../assets/projects/diagram.png";
 
 
 const projects = [
@@ -26,6 +27,20 @@ const projects = [
     description:
       "",
     link: "/dashboard/index.html",
+  },
+  {
+    name: "Tetris",
+    img: tetris,
+    description:
+      "",
+    link: "/gametetris.html",
+  },
+  {
+    name: "Diagram Penjualan",
+    img: diagram,
+    description:
+      "",
+    link: "/diagram.html",
   },
 ];
 
