@@ -4,6 +4,7 @@ import twitter from "../assets/contact/twitter.png";
 import github from "../assets/github.png";
 
 const contacts = [
+
   {
     label: "darkmadani@gmail.com",
     icon: email,

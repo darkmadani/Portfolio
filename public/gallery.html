@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        button.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Semua</button>
+        <button class="filter-btn" data-category="illustration">Ilustrasi</button>
+        <button class="filter-btn" data-category="graphic-design">Desain Grafis</button>
+        <button class="filter-btn" data-category="photography">Fotografi</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item" data-category="illustration">
+            <img src="/api/placeholder/250/200" alt="Ilustrasi 1">
+            <h3>Ilustrasi Digital</h3>
+            <p>Karya ilustrasi digital dengan tema alam</p>
+        </div>
+        <div class="gallery-item" data-category="graphic-design">
+            <img src="/api/placeholder/250/200" alt="Desain 1">
+            <h3>Poster Event</h3>
+            <p>Desain poster untuk acara musik</p>
+        </div>
+        <div class="gallery-item" data-category="photography">
+            <img src="/api/placeholder/250/200" alt="Foto 1">
+            <h3>Landscape</h3>
+            <p>Foto pemandangan alam</p>
+        </div>
+        <div class="gallery-item" data-category="illustration">
+            <img src="/api/placeholder/250/200" alt="Ilustrasi 2">
+            <h3>Karakter Animasi</h3>
+            <p>Desain karakter untuk animasi</p>
+        </div>
+        <div class="gallery-item" data-category="graphic-design">
+            <img src="/api/placeholder/250/200" alt="Desain 2">
+            <h3>Logo Brand</h3>
+            <p>Desain logo untuk brand lokal</p>
+        </div>
+        <div class="gallery-item" data-category="photography">
+            <img src="/api/placeholder/250/200" alt="Foto 2">
+            <h3>Portrait</h3>
+            <p>Foto portrait dengan teknik natural light</p>
+        </div>
+    </div>
+
+    <script>
+        // Mengambil semua tombol filter dan item galeri
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        // Menambahkan event listener untuk setiap tombol filter
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Menghapus kelas active dari semua tombol
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Menambahkan kelas active ke tombol yang diklik
+                button.classList.add('active');
+                
+                // Mendapatkan kategori yang dipilih
+                const selectedCategory = button.getAttribute('data-category');
+                
+                // Memfilter item galeri
+                galleryItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    
+                    if (selectedCategory === 'all' || selectedCategory === itemCategory) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
