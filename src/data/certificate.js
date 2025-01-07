@@ -11,6 +11,7 @@ const certificates = [
     description:
       "",
     link: "https://www.sololearn.com/certificates/CC-KLKOGOUO",
+    category: "HTML",
   },
   {
     name: "CSS",
@@ -18,6 +19,7 @@ const certificates = [
     description:
       "",
     link: "https://www.sololearn.com/certificates/CC-0GLPXOTH",
+    category: "CSS",
   },
   {
     name: "JAVASCRIPT",
@@ -25,6 +27,7 @@ const certificates = [
     description:
       "",
     link: "https://www.sololearn.com/certificates/CC-OXWF7K27",
+    category: "JAVASCRIPT",
   },
   {
     name: "JAVASCRIPT INTERMEDIATE",
@@ -32,7 +35,15 @@ const certificates = [
     description:
       "",
     link: "https://www.sololearn.com/certificates/CC-A18N13FE",
+    category: "JAVASCRIPT",
   },
+];
+
+export const categories = [
+  { id: "all", label: "Semua" },
+  { id: "HTML", label: "Html" },
+  { id: "CSS", label: "Css" },
+  { id: "JAVASCRIPT", label: "Javascript" },
 ];
 
 export { certificates };
